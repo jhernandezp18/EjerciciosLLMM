@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Ola, mi primer documento HTML5</title>
+</head>
+<body>
+  Aquí va el contenido de la página.
+</body>
+</html>
