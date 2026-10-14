@@ -1,0 +1,9 @@
+#tabla,th,td{
+    border: 1px solid black;
+}
+.datos{
+    background-color: azure;
+}
+.total{
+    background-color: bisque;
+}
