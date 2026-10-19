@@ -1,9 +1,20 @@
-#tabla,th,td{
+#tabla,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+#morado {
+    background-color: rgb(219, 176, 219);
     border: 1px solid black;
 }
-.datos{
-    background-color: azure;
+
+#rosa {
+    background-color: rgb(247, 221, 238)
 }
-.total{
-    background-color: bisque;
+
+#verde {
+    background-color: rgb(185, 238, 185)
 }

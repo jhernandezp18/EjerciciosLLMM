@@ -1,0 +1,47 @@
+#tabla,
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+#titulotabla {
+    border: 1px solid black;
+    color: black;
+    background-color: beige;
+}
+
+#fila1 {
+    border: 1px solid black;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+#fila2 {
+    border: 1px solid black;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+#fila3 {
+    border: 1px solid black;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.datos {
+    background-color: azure;
+}
+
+.total {
+    background-color: bisque;
+}
+
+#verde {
+    background-color: aquamarine;
+}
+
+#azul {
+    background-color: blue;
+}
