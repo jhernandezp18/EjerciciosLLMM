@@ -19,6 +19,13 @@
                     <label for="nombre">Nombre: </label>
                     <input type="text" name="nombre" maxlength="20">
                 </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <strong>Edades:</strong>
+                </p>
                 <p>
                     <label>
                         <input type="radio" name="etapa" id="menos20" value="joven" checked>Menos 20 años
@@ -45,16 +52,80 @@
                     </label>
                 </p>
             </td>
+            <td> 
+                <p>
+                    <strong>Aficiones:</strong>
+                </p>
+                <p>
+                    <label for="andarin">
+                        <input type="checkbox" name="andar" id="andarin" value="si" form="formulario">Senderismo
+                    </label>
+                </p>
+                <p>
+                    <label for="lector">
+                        <input type="checkbox" name="leer" id="lector" value="si" form="formulario">Lectura
+                    </label>
+                </p>
+                <p>
+                    <label for="turista">
+                        <input type="checkbox" name="turismo" id="turista" value="si" form="formulario">Turismo
+                    </label>
+                </p>
+                <p>
+                    <label for="cinefilo">
+                        <input type="checkbox" name="cine" id="cinefilo" value="si" form="formulario">Cine
+                    </label>
+                </p>
+                <p>
+                    <label for="fotografo">
+                        <input type="checkbox" name="fotografia" id="fotografo" value="si" form="formulario">Fotografía
+                    </label>
+                </p>
+            </td>
         </tr>
-
-
-
-
-
-
-
-
-
+        <tr>
+            <td>
+                <p>
+                    <h3>Introduce la fecha:</h3>
+                </p>
+                <p><label for="fecha"><input type="date" name="fecha" id="fecha" value="2026-01-01"></label>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <h3>Selecciona color:</h3>
+                </p>
+                <p>
+                    <input type="color" name="colorido" id="color" value="#4e4e4e">
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <h3>Rango de valores</h3>
+                </p>
+                <p>
+                    <input id="rango" name="valoresrango" type="range" value="50" min="0" max="100" step="10">
+                </p>
+            </td>
+            <td>
+                <p>
+                    <h3>Selecciona fichero:</h3>
+                </p>
+                <p>
+                    <input type="file" id="fichero" name="selfichero" accept=".doc,.pdf,.docx">
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td id="boton1">
+                <input type="submit" id="enviar" form="formulario">
+            </td>
+            <td id="boton2">
+                <input type="reset" id="reiniciar" form="formulario">
+            </td>
+        </tr>
 
     </table>
 
