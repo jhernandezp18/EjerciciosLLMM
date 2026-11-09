@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido - Industrias Extremeñas S.A.</title>
+</head>
+
+<body>
+    <h1 style="text-align: left;">INDUSTRIAS EXTREMEÑAS S.A.</h1>
+    <form action="manejador.html" enctype="multipart/form-data" method="post" name="formtipos" id="formulario">
+        <fieldset style="border:1px solid #050505; font-size: 13px; padding: 15px;">
+            <legend>FORMULARIO DE PEDIDO</legend>
+            <table style="width: 100%; margin-bottom: 20px;">
+                <tr>
+                    <td colspan="2">
+                        <p><b>&gt; Paso 1. Identificación</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 65%; vertical-align: top;">
+                        <fieldset>
+                            <legend>Datos del Cliente</legend>
+                            <p>
+                                <label for="correo">Correo Electrónico </label>
+                                <input type="email" name="correo" id="correo" size="30">
+                            </p>
+                            <p>
+                                <label for="password">Contraseña </label>
+                                <input type="password" name="password" id="password" size="15">
+                            </p>
+                            <p style="font-size: 11px; margin-top: -5px;">
+                                (Longitud mínima 6 caracteres)
+                            </p>
+                        </fieldset>
+                    </td>
+                    <td style="width: 35%; vertical-align: top;">
+                        <fieldset>
+                            <legend>Tipo de Cliente</legend>
+                            <p>
+                                <label><input type="radio" name="cliente" id="particular" value="particular" checked>
+                                    Particular</label>
+                            </p>
+                            <p>
+                                <label><input type="radio" name="cliente" id="asociacion" value="asociacion">
+                                    Asociación</label>
+                            </p>
+                            <p>
+                                <label><input type="radio" name="cliente" id="empresa" value="empresa"> Empresa</label>
+                            </p>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+            <table style="width: 100%; margin-bottom: 20px;">
+                <tr>
+                    <td colspan="2">
+                        <p><b>&gt; Paso 2. Pedido</b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 35%; vertical-align: top;">
+                        <fieldset>
+                            <legend>Datos del Producto</legend>
+                            <label for="producto">Producto</label><br>
+                            <select name="producto" id="producto" size="8" style="width: 100%;">
+                                <optgroup label="Armaduras">
+                                    <option value="AR001" selected>AR001 Oro Reluciente</option>
+                                    <option value="AR002">AR002 Plata Pulida</option>
+                                    <option value="AR003">AR003 Bronce Reforzado</option>
+                                </optgroup>
+                                <optgroup label="Extras">
+                                    <option value="EX001">EX001 Escudo</option>
+                                    <option value="EX002">EX002 Invisibilidad</option>
+                                </optgroup>
+                            </select>
+                        </fieldset>
+                    </td>
+                    <td style="width: 65%; vertical-align: top;">
+                        <fieldset>
+                            <legend>Información de interés</legend>
+                            <label for="comentarios">Comentarios</label><br>
+                            <textarea name="comentarios" id="comentarios" rows="5" style="width: 98%;"
+                                placeholder="Escriba aquí sus comentarios"></textarea>
+                            <p>
+                                <label><input type="checkbox" name="publicidad" value="si" checked> Acepto recibir
+                                    información publicitaria</label>
+                            </p>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+
+            <table style="width: 100%; margin-bottom: 20px;">
+                <tr>
+                    <td style="width: 50%; vertical-align: top;">
+                        <fieldset>
+                            <legend>Datos de Envío</legend>
+                            <p>
+                                <label for="direccion">Dirección</label><br>
+                                <input type="text" name="direccion" id="direccion" style="width: 90%;">
+                            </p>
+                            <p>
+                                <label for="ciudad">Ciudad</label><br>
+                                <input type="text" name="ciudad" id="ciudad" style="width: 60%;">
+                            </p>
+                            <p>
+                                <label for="cp">Código Postal</label><br>
+                                <input type="text" name="cp" id="cp" size="8">
+                            </p>
+                        </fieldset>
+                    </td>
+                    <td style="width: 50%; vertical-align: top;">
+                        <fieldset>
+                            <legend>Datos Bancarios</legend>
+                            <p>
+                                <label for="banco">Nombre de la Entidad</label><br>
+                                <input type="text" name="banco" id="banco" style="width: 90%;">
+                            </p>
+                            <p>
+                                <label for="cuenta">Nº de cuenta</label><br>
+                                <input type="text" name="cuenta" id="cuenta" style="width: 90%;">
+                            </p>
+                        </fieldset>
+                    </td>
+                </tr>
+            </table>
+            <table style="width: 100%;">
+                <tr>
+                    <td style="text-align: left;">
+                        <input type="image" src="./imagenes/enviar.png" alt="Enviar" style="width: 30px; height: 30px;">
+                    </td>
+                    <td style="text-align: right;">
+                        <input type="image" src="./imagenes/reiniciar.png" alt="Restablecer"
+                            style="width: 30px; height: 30px;" onclick="this.form.reset(); return false;">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
