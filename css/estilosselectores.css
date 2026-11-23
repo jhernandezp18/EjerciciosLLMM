@@ -1,0 +1,24 @@
+header {
+    font-size: 60px;
+    color: #0d04bf;
+}
+
+h2 + p {
+    font-size: 48px;
+    color: #c00000;
+}
+
+h1, footer {
+    font-size: 48px;
+    color: #00f;
+}
+
+section p {
+    font-size: 36px;
+    color: #ff8000;
+}
+
+main p {
+    font-size: 24px;
+    color: #00ff00;
+}
