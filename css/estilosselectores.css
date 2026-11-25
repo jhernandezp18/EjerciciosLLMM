@@ -22,3 +22,40 @@ main p {
     font-size: 24px;
     color: #00ff00;
 }
+
+h3 ~ p {
+    font-size: 30px;
+    color: #c00000;
+}
+
+.fondoazul {
+    background-color: aqua;
+}
+#cabeceraprincipal {
+    color: chocolate;
+    font-size: 25px;
+}
+
+p[name] {
+    font-size: 8px;
+}
+
+p[name="pcabecera"] {
+    color: red;
+}
+
+p[name~=par]{
+    color: maroon;
+}
+
+p[name^="pm"]{
+    color: green
+}
+
+p[name$="al"]{
+    color: fuchsia;
+}
+
+p[name*="fin"]{
+    color: #0d04bf;
+}
